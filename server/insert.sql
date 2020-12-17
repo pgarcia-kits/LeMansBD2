@@ -1,38 +1,38 @@
 -- Fabricantes
-INSERT INTO fabricante(id,nombre) VALUES (1,'Toyota');
-INSERT INTO fabricante(id,nombre) VALUES (2,'BG Engineering Group, LLC');
-INSERT INTO fabricante(id,nombre) VALUES (3,'Rebellion');
-INSERT INTO fabricante(id,nombre) VALUES (4,'Alpine');
-INSERT INTO fabricante(id,nombre) VALUES (5,'Oreca');
-INSERT INTO fabricante(id,nombre) VALUES (6,'Ligier');
-INSERT INTO fabricante(id,nombre) VALUES (7,'Aurus');
-INSERT INTO fabricante(id,nombre) VALUES (8,'Dallara');
-INSERT INTO fabricante(id,nombre) VALUES (9,'Ferrari');
-INSERT INTO fabricante(id,nombre) VALUES (10,'Porsche');
-INSERT INTO fabricante(id,nombre) VALUES (11,'Ford');
-INSERT INTO fabricante(id,nombre) VALUES (12,'Chevrolet');
-INSERT INTO fabricante(id,nombre) VALUES (13,'BMW');
-INSERT INTO fabricante(id,nombre) VALUES (14,'Aston Martin');
-INSERT INTO fabricante(id,nombre) VALUES (15,'Enso');
+INSERT INTO fabricante(id,nombre) VALUES ('Toyota');
+INSERT INTO fabricante(id,nombre) VALUES ('BG Engineering Group, LLC');
+INSERT INTO fabricante(id,nombre) VALUES ('Rebellion');
+INSERT INTO fabricante(id,nombre) VALUES ('Alpine');
+INSERT INTO fabricante(id,nombre) VALUES ('Oreca');
+INSERT INTO fabricante(id,nombre) VALUES ('Ligier');
+INSERT INTO fabricante(id,nombre) VALUES ('Aurus');
+INSERT INTO fabricante(id,nombre) VALUES ('Dallara');
+INSERT INTO fabricante(id,nombre) VALUES ('Ferrari');
+INSERT INTO fabricante(id,nombre) VALUES ('Porsche');
+INSERT INTO fabricante(id,nombre) VALUES ('Ford');
+INSERT INTO fabricante(id,nombre) VALUES ('Chevrolet');
+INSERT INTO fabricante(id,nombre) VALUES ('BMW');
+INSERT INTO fabricante(id,nombre) VALUES ('Aston Martin');
+INSERT INTO fabricante(id,nombre) VALUES ('Enso');
 
 --Modelos
-INSERT INTO modelo(id,nombre,id_fabricante) VALUES (1,'TS050 Hybrid',1);
-INSERT INTO modelo(id,nombre,id_fabricante) VALUES (2,'BR1',2);
-INSERT INTO modelo(id,nombre,id_fabricante) VALUES (3,'R13',3);
-INSERT INTO modelo(id,nombre,id_fabricante) VALUES (4,'A470',4);
-INSERT INTO modelo(id,nombre,id_fabricante) VALUES (5,'07',5);
-INSERT INTO modelo(id,nombre,id_fabricante) VALUES (6,'JSP217',6);
-INSERT INTO modelo(id,nombre,id_fabricante) VALUES (7,'01',7);
-INSERT INTO modelo(id,nombre,id_fabricante) VALUES (8,'P217',8);
-INSERT INTO modelo(id,nombre,id_fabricante) VALUES (9,'488 GTE EVO',9);
-INSERT INTO modelo(id,nombre,id_fabricante) VALUES (10,'911 RSR',10);
-INSERT INTO modelo(id,nombre,id_fabricante) VALUES (11,'GT',11);
-INSERT INTO modelo(id,nombre,id_fabricante) VALUES (12,'Corvette C7R',12);
-INSERT INTO modelo(id,nombre,id_fabricante) VALUES (13,'M8 GTE',13);
-INSERT INTO modelo(id,nombre,id_fabricante) VALUES (14,'488 GTE',9);
-INSERT INTO modelo(id,nombre,id_fabricante) VALUES (15,'Vantage',14);
-INSERT INTO modelo(id,nombre,id_fabricante) VALUES (16,'CLM P1/01',15);
-INSERT INTO modelo(id,nombre,id_fabricante) VALUES (17,'Vantage AMR',14);
+INSERT INTO modelo(id,nombre,id_fabricante) VALUES ('TS050 Hybrid',1);
+INSERT INTO modelo(id,nombre,id_fabricante) VALUES ('BR1',2);
+INSERT INTO modelo(id,nombre,id_fabricante) VALUES ('R13',3);
+INSERT INTO modelo(id,nombre,id_fabricante) VALUES ('A470',4);
+INSERT INTO modelo(id,nombre,id_fabricante) VALUES ('07',5);
+INSERT INTO modelo(id,nombre,id_fabricante) VALUES ('JSP217',6);
+INSERT INTO modelo(id,nombre,id_fabricante) VALUES ('01',7);
+INSERT INTO modelo(id,nombre,id_fabricante) VALUES ('P217',8);
+INSERT INTO modelo(id,nombre,id_fabricante) VALUES ('488 GTE EVO',9);
+INSERT INTO modelo(id,nombre,id_fabricante) VALUES ('911 RSR',10);
+INSERT INTO modelo(id,nombre,id_fabricante) VALUES ('GT',11);
+INSERT INTO modelo(id,nombre,id_fabricante) VALUES ('Corvette C7R',12);
+INSERT INTO modelo(id,nombre,id_fabricante) VALUES ('M8 GTE',13);
+INSERT INTO modelo(id,nombre,id_fabricante) VALUES ('488 GTE',9);
+INSERT INTO modelo(id,nombre,id_fabricante) VALUES ('Vantage',14);
+INSERT INTO modelo(id,nombre,id_fabricante) VALUES ('CLM P1/01',15);
+INSERT INTO modelo(id,nombre,id_fabricante) VALUES ('Vantage AMR',14);
 INSERT INTO modelo(id,nombre,id_fabricante) VALUES (18,'911 RSR - 19',10);
 
 --Equipos
@@ -154,10 +154,10 @@ INSERT INTO sector(id,nombre,id_pista) VALUES (12,'Curva Dunlop',1);
 INSERT INTO sector(id,nombre,id_pista) VALUES (13,'General',1);
 
 --Eventos
-INSERT INTO evento(id,ano,tipo,id_organizacion,id_pista) VALUES (1,2019,'Ensayo',1,1);
-INSERT INTO evento(id,ano,tipo,id_organizacion,id_pista) VALUES (2,2019,'Carrera',1,1);
-INSERT INTO evento(id,ano,tipo,id_organizacion,id_pista) VALUES (3,2020,'Ensayo',1,1);
-INSERT INTO evento(id,ano,tipo,id_organizacion,id_pista) VALUES (4,2020,'Carrera',1,1);
+INSERT INTO evento(id,ano,tipo,id_organizacion,id_pista) VALUES (2019,'Ensayo',1,1);
+INSERT INTO evento(id,ano,tipo,id_organizacion,id_pista) VALUES (2019,'Carrera',1,1);
+INSERT INTO evento(id,ano,tipo,id_organizacion,id_pista) VALUES (2020,'Ensayo',1,1);
+INSERT INTO evento(id,ano,tipo,id_organizacion,id_pista) VALUES (2020,'Carrera',1,1);
 
 --Equipo-Evento
 INSERT INTO equipo_evento(id_equipo,id_evento) VALUES (1,1);
