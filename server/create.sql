@@ -1,13 +1,13 @@
 CREATE TYPE Persona as
 (
-    nombre varchar(15),
-    nombre2 varchar(15),
-    apellido varchar(15),
-    apellido2 varchar(15),
-    fecha_nacimiento date,
-    estatura float, 
-    peso float,
-    fecha_fallecimiento date, 
+    nombre varchar(20),
+    nombre2 varchar(20),
+    apellido varchar(20),
+    apellido2 varchar(20),
+    fecha_nacimiento varchar,
+    estatura varchar, 
+    peso varchar,
+    fecha_fallecimiento varchar, 
     genero varchar(1)
 );
 
@@ -105,7 +105,7 @@ CREATE TABLE public.evento
 CREATE TABLE public.piloto
 (
     id numeric(5) NOT NULL,
-    informacion Persona NOT NULL,
+    informacion Persona,  --Esto debe ser obligatorio
     idiomas varchar[5], --Esto debe ser obligatorio
     foto BYTEA,
     id_nacionalidad numeric NOT NULL,
@@ -121,6 +121,7 @@ CREATE TABLE public.vehiculo
     tipo varchar NOT NULL,
     --caracteristicas varchar[5] NOT NULL,
     --piezas [][],
+    --serial varchar(40),
     foto BYTEA,
     id_equipo numeric NOT NULL,
     id_modelo numeric NOT NULL,
@@ -144,7 +145,7 @@ CREATE TABLE public.ranking
 (
     id numeric NOT NULL,
     posicion numeric,
-    kilometraje float NOT NULL,
+    kilometraje float,
     vueltas numeric NOT NULL,
     tiempo_total Tiempo,
     desempeno Marcas,
