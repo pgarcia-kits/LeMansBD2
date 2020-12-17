@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "Lemans Project",
+            "database": "lemans_db",
+            "username": "lemans_user",
+            "password": "123456"
+        }
+    ]
+}
